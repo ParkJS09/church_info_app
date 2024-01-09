@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class LightTheme implements AppTheme {
   @override
-  Brightness brightness = Brightness.light;
+  Brightness brightness = lightColorScheme.brightness;
 
   @override
   ColorScheme color = lightColorScheme;
