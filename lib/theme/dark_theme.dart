@@ -1,35 +1,11 @@
+import 'package:church_info_app/theme/foundation/app_theme.dart';
+import 'package:church_info_app/theme/res/palette.dart';
 import 'package:flutter/material.dart';
 
-const darkColorScheme = ColorScheme(
-  brightness: Brightness.dark,
-  primary: Color(0xFFCFBCFF),
-  onPrimary: Color(0xFF381E72),
-  primaryContainer: Color(0xFF4F378A),
-  onPrimaryContainer: Color(0xFFE9DDFF),
-  secondary: Color(0xFFCBC2DB),
-  onSecondary: Color(0xFF332D41),
-  secondaryContainer: Color(0xFF4A4458),
-  onSecondaryContainer: Color(0xFFE8DEF8),
-  tertiary: Color(0xFFEFB8C8),
-  onTertiary: Color(0xFF4A2532),
-  tertiaryContainer: Color(0xFF633B48),
-  onTertiaryContainer: Color(0xFFFFD9E3),
-  error: Color(0xFFFFB4AB),
-  errorContainer: Color(0xFF93000A),
-  onError: Color(0xFF690005),
-  onErrorContainer: Color(0xFFFFDAD6),
-  background: Color(0xFF1C1B1E),
-  onBackground: Color(0xFFE6E1E6),
-  surface: Color(0xFF1C1B1E),
-  onSurface: Color(0xFFE6E1E6),
-  surfaceVariant: Color(0xFF49454E),
-  onSurfaceVariant: Color(0xFFCAC4CF),
-  outline: Color(0xFF948F99),
-  onInverseSurface: Color(0xFF1C1B1E),
-  inverseSurface: Color(0xFFE6E1E6),
-  inversePrimary: Color(0xFF6750A4),
-  shadow: Color(0xFF000000),
-  surfaceTint: Color(0xFFCFBCFF),
-  outlineVariant: Color(0xFF49454E),
-  scrim: Color(0xFF000000),
-);
+class DarkTheme implements AppTheme {
+  @override
+  Brightness brightness = Brightness.light;
+
+  @override
+  ColorScheme color = darkColorScheme;
+}
