@@ -1,4 +1,4 @@
-import 'package:church_info_app/src/service/theme_service.dart';
+import 'package:church_info_app/share/service/theme_service.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
