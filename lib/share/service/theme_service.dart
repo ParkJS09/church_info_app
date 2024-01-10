@@ -11,7 +11,7 @@ class ThemeService with ChangeNotifier {
   void toggleTheme() {
     print('current theme : ${theme.brightness}');
     if (theme.brightness == Brightness.light) {
-      theme = DarkTheme();
+      theme = LightTheme();
     } else {
       theme = LightTheme();
     }
