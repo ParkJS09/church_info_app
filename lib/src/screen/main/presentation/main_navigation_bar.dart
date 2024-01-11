@@ -1,3 +1,4 @@
+import 'package:church_info_app/share/service/navigation_service.dart';
 import 'package:church_info_app/src/screen/chulcheck/check_screen.dart';
 import 'package:church_info_app/src/screen/home/home_screen.dart';
 import 'package:church_info_app/src/screen/setting/setting_screen.dart';
@@ -11,23 +12,17 @@ class MainNavigationBar extends StatefulWidget {
 }
 
 class _MainNavigationBarState extends State<MainNavigationBar> {
-  int _selectedIndex = 0;
   static const List<Widget> _page = <Widget>[
     HomeScreen(),
     CheckScreen(),
     SettingScreen(),
   ];
 
-  void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
+    int currentIndex = context.navWatchService.currentIndex;
     return Scaffold(
-      body: _page[_selectedIndex],
+      body: _page[currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
@@ -46,9 +41,12 @@ class _MainNavigationBarState extends State<MainNavigationBar> {
             backgroundColor: Colors.pink,
           ),
         ],
-        currentIndex: _selectedIndex,
+        currentIndex: currentIndex,
         selectedItemColor: Colors.amber[800],
-        onTap: _onItemTapped,
+        onTap: (index) {
+          print('onTap index : $index');
+          context.navReadService.selectIndex(index);
+        },
       ),
     );
   }

@@ -1,3 +1,4 @@
+import 'package:church_info_app/share/service/navigation_service.dart';
 import 'package:church_info_app/share/service/theme_service.dart';
 import 'package:church_info_app/src/screen/main/main_screen.dart';
 import 'package:flutter/material.dart';
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: context.themeService.themeData,
-      home: MainScreen(),
+      home: const MainScreen(),
     );
   }
 }
