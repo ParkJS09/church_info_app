@@ -1,6 +1,7 @@
 import 'package:church_info_app/share/service/navigation_service.dart';
 import 'package:church_info_app/src/screen/chulcheck/check_screen.dart';
 import 'package:church_info_app/src/screen/home/home_screen.dart';
+import 'package:church_info_app/src/screen/main/presentation/nav_menu.dart';
 import 'package:church_info_app/src/screen/setting/setting_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -12,17 +13,11 @@ class MainNavigationBar extends StatefulWidget {
 }
 
 class _MainNavigationBarState extends State<MainNavigationBar> {
-  static const List<Widget> _page = <Widget>[
-    HomeScreen(),
-    CheckScreen(),
-    SettingScreen(),
-  ];
-
   @override
   Widget build(BuildContext context) {
     int currentIndex = context.navWatchService.currentIndex;
     return Scaffold(
-      body: _page[currentIndex],
+      body: NavMenu.pages[currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
