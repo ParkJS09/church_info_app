@@ -1,7 +1,4 @@
 import 'package:church_info_app/share/service/navigation_service.dart';
-import 'package:church_info_app/share/service/theme_service.dart';
-import 'package:church_info_app/src/screen/main/presentation/component/main_navigation_bar.dart';
-import 'package:church_info_app/src/screen/main/presentation/component/main_side_bar.dart';
 import 'package:church_info_app/theme/res/layout.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
