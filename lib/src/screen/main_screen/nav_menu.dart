@@ -1,6 +1,6 @@
-import 'package:church_info_app/src/screen/main/presentation/page/chulcheck/check_screen.dart';
-import 'package:church_info_app/src/screen/main/presentation/page/home/home_screen.dart';
-import 'package:church_info_app/src/screen/main/presentation/page/setting/setting_screen.dart';
+import 'package:church_info_app/src/screen/main_screen/page/chulcheck/check_screen.dart';
+import 'package:church_info_app/src/screen/main_screen/page/home/home_screen.dart';
+import 'package:church_info_app/src/screen/main_screen/page/setting/setting_screen.dart';
 import 'package:flutter/material.dart';
 
 abstract class NavMenu {

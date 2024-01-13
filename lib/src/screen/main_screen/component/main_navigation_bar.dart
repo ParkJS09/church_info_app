@@ -1,5 +1,5 @@
 import 'package:church_info_app/share/service/navigation_service.dart';
-import 'package:church_info_app/src/screen/main/presentation/nav_menu.dart';
+import 'package:church_info_app/src/screen/main_screen/nav_menu.dart';
 import 'package:flutter/material.dart';
 
 class MainNavigationBar extends StatefulWidget {

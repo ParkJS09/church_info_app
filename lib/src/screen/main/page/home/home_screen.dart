@@ -1,4 +1,4 @@
-import 'package:church_info_app/src/screen/page/home/home_content.dart';
+import 'package:church_info_app/src/screen/main_screen/page/home/home_content.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
