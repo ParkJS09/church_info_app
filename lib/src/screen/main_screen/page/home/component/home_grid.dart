@@ -1,3 +1,4 @@
+import 'package:church_info_app/src/screen/main_screen/page/home/component/home_content_item.dart';
 import 'package:flutter/material.dart';
 
 class HomeGrid extends StatelessWidget {
@@ -12,36 +13,15 @@ class HomeGrid extends StatelessWidget {
       mainAxisSpacing: 10,
       crossAxisCount: 2,
       children: <Widget>[
-        Container(
-          padding: const EdgeInsets.all(8),
-          color: Colors.teal[100],
-          child: const Placeholder(),
-        ),
-        Container(
-          padding: const EdgeInsets.all(8),
-          color: Colors.teal[200],
-          child: const Placeholder(),
-        ),
-        Container(
-          padding: const EdgeInsets.all(8),
-          color: Colors.teal[300],
-          child: const Placeholder(),
-        ),
-        Container(
-          padding: const EdgeInsets.all(8),
-          color: Colors.teal[400],
-          child: const Placeholder(),
-        ),
-        Container(
-          padding: const EdgeInsets.all(8),
-          color: Colors.teal[500],
-          child: const Placeholder(),
-        ),
-        Container(
-          padding: const EdgeInsets.all(8),
-          color: Colors.teal[600],
-          child: const Placeholder(),
-        ),
+        HomeContentItem(isList: false, title: '타이틀 영역'),
+        HomeContentItem(isList: false, title: '타이틀 영역'),
+        HomeContentItem(isList: false, title: '타이틀 영역'),
+        HomeContentItem(isList: false, title: '타이틀 영역'),
+        HomeContentItem(isList: false, title: '타이틀 영역'),
+        HomeContentItem(isList: false, title: '타이틀 영역'),
+        HomeContentItem(isList: false, title: '타이틀 영역'),
+        HomeContentItem(isList: false, title: '타이틀 영역'),
+        HomeContentItem(isList: false, title: '타이틀 영역'),
       ],
     );
   }

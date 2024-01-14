@@ -1,3 +1,4 @@
+import 'package:church_info_app/src/screen/main_screen/page/home/component/home_content_item.dart';
 import 'package:flutter/material.dart';
 
 class HomeList extends StatelessWidget {
@@ -7,7 +8,7 @@ class HomeList extends StatelessWidget {
     return ListView.builder(
       itemCount: 10,
       itemBuilder: (context, index) {
-        return Placeholder();
+        return HomeContentItem(isList: true, title: '타이틀 영역');
       },
     );
   }

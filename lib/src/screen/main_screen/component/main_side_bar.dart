@@ -20,7 +20,7 @@ class _MyWidgetState extends State<MainSideBar> {
           destinations: const [
             NavigationRailDestination(
               icon: Icon(Icons.home),
-              label: Text(''),
+              label: Text('홈'),
             ),
             NavigationRailDestination(
               icon: Icon(Icons.business),

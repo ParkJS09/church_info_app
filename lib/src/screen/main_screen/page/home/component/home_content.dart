@@ -9,7 +9,7 @@ class HomeContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return context.layout(
-      HomeGrid(),
+      HomeGrid(isList: false),
       mobile: HomeList(),
     );
   }
