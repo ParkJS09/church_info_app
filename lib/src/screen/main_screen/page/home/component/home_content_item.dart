@@ -19,7 +19,7 @@ class HomeContentItem extends StatelessWidget {
   }
 
   Widget getListItem(BuildContext context) {
-    return ExpansionTile(
+    return const ExpansionTile(
       title: Text('타일 제목'),
       children: <Widget>[
         ListTile(
@@ -60,7 +60,7 @@ class HomeContentItem extends StatelessWidget {
                   14.0,
                 ),
               ),
-              child: Center(
+              child: const Center(
                 child: Text(
                   '여기는 Content',
                 ),
