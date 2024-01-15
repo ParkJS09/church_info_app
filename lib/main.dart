@@ -1,5 +1,6 @@
 import 'package:church_info_app/share/service/theme_service.dart';
 import 'package:church_info_app/src/screen/main_screen/main_screen.dart';
+import 'package:church_info_app/src/screen/sign_screen/sign_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: context.themeService.themeData,
-      home: const MainScreen(),
+      home: const SignScreen(),
     );
   }
 }
